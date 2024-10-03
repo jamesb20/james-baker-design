@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Baker Design</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 1em;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+        }
+
+        nav {
+            background-color: #2c2c2c;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #555;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            display: none;
+            padding: 40px;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        James Baker Design
+    </header>
+
+    <nav>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <div class="dropdown">
+            <a href="#projects" onclick="event.preventDefault()">Projects</a>
+            <div class="dropdown-content">
+                <a href="#project1" onclick="showSection('project1')">Keychron K2</a>
+                <a href="#project2" onclick="showSection('project2')">Bean-ie Bike</a>
+                <a href="#project3" onclick="showSection('project3')">Fan Heater</a>
+                <a href="#project4" onclick="showSection('project4')">Safaricart</a>
+                <a href="#project5" onclick="showSection('project5')">Garlic Wheel</a>
+            </div>
+        </div>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <section id="home" style="display: block;">
+        <img src="images/1.jpg" alt="Landing Page Image">
+    </section>
+
+    <section id="about">
+        <img src="images/2.jpg" alt="About Image 1">
+        <img src="images/3.jpg" alt="About Image 2">
+        <img src="images/4.jpg" alt="About Image 3">
+    </section>
+
+    <section id="project1">
+        <img src="images/5.jpg" alt="Keychron K2">
+        <img src="images/6.jpg" alt="Keychron K2">
+        <img src="images/7.jpg" alt="Keychron K2">
+        <img src="images/8.jpg" alt="Keychron K2">
+        <img src="images/9.jpg" alt="Keychron K2">
+        <img src="images/10.jpg" alt="Keychron K2">
+    </section>
+
+    <section id="project2">
+        <img src="images/11.jpg" alt="Bean-ie Bike">
+        <img src="images/12.jpg" alt="Bean-ie Bike">
+        <img src="images/13.jpg" alt="Bean-ie Bike">
+        <img src="images/14.jpg" alt="Bean-ie Bike">
+        <img src="images/15.jpg" alt="Bean-ie Bike">
+        <img src="images/16.jpg" alt="Bean-ie Bike">
+        <img src="images/17.jpg" alt="Bean-ie Bike">
+    </section>
+
+    <section id="project3">
+        <img src="images/18.jpg" alt="Fan Heater">
+        <img src="images/19.jpg" alt="Fan Heater">
+        <img src="images/20.jpg" alt="Fan Heater">
+        <img src="images/21.jpg" alt="Fan Heater">
+        <img src="images/22.jpg" alt="Fan Heater">
+        <img src="images/23.jpg" alt="Fan Heater">
+        <img src="images/24.jpg" alt="Fan Heater">
+    </section>
+
+    <section id="project4">
+        <img src="images/25.jpg" alt="Safaricart">
+        <img src="images/26.jpg" alt="Safaricart">
+        <img src="images/27.jpg" alt="Safaricart">
+        <img src="images/28.jpg" alt="Safaricart">
+        <img src="images/29.jpg" alt="Safaricart">
+        <img src="images/30.jpg" alt="Safaricart">
+        <img src="images/31.jpg" alt="Safaricart">
+    </section>
+
+    <section id="project5">
+        <img src="images/32.jpg" alt="Garlic Wheel">
+        <img src="images/33.jpg" alt="Garlic Wheel">
+        <img src="images/34.jpg" alt="Garlic Wheel">
+        <img src="images/35.jpg" alt="Garlic Wheel">
+        <img src="images/36.jpg" alt="Garlic Wheel">
+        <img src="images/37.jpg" alt="Garlic Wheel">
+        <img src="images/38.jpg" alt="Garlic Wheel">
+    </section>
+
+    <section id="contact">
+        <img src="images/39.jpg" alt="Contact Image">
+    </section>
+
+    <footer>
+        &copy; 2024 James Baker Design
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+
+            // Set active class for the nav link
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(sectionId)) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
